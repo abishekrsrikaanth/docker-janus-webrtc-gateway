@@ -10,6 +10,8 @@ RUN ./setup.sh
 RUN ./dependencies.sh
 # Install extras
 RUN ./extras.sh
+# Upgrade CURL
+RUN ./upgradecurl.sh
 # Install libsrtp 2.0.0 (To reduce risk of broken interoperability with future WebRTC versions)
 RUN ./libsrtp.sh
 # Install usrsctp for data channel support
