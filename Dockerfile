@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER Efa-GmbH <team@efa-gmbh.com>
 
 # Copy installation scripts in
@@ -30,7 +30,7 @@ RUN ./janus.sh
 COPY conf/*.cfg /opt/janus/etc/janus/
 
 # Declare the ports we use
-EXPOSE 80 7088 8088 8188
+EXPOSE 88 7088 8088 8188
 
 # Define the default start-up command
 CMD ./startup.sh
